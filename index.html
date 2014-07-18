@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script src="js/ga.js"></script>
+	<link rel="stylesheet" type="text/css" href="style/main.css">
+	<link rel="shortcut icon" href="http://vialectrum.org/favicon.ico">
+	<title>Vialectrum Viacoin Wallet</title>
+</head>
+<body>
+<div id="header">
+	<h1><img src="images/vialectrum.jpg" alt="Vialectrum"></h1>
+</div>
+<div id="content">
+<div id="column">
+	<p>Vialectrum is an easy-to-use <a href="http://viacoin.org/">Viacoin</a>
+	client based on <a href="https://electrum.org/">Electrum</a>.
+	It protects you from losing coins in a backup mistake or computer failure,
+	because your wallet can be recovered from a secret phrase
+	that you can write on paper or learn by heart.
+	There is no waiting time when you start the client,
+	because it does not download the Viacoin blockchain.</p>
+	
+	<h2 id="features">Features</h2>
+	<ul>
+	<li>Instant on: Your client does not download the blockchain, it uses a remote server.</li>
+	<li>Forgiving: Your wallet can be recovered from a secret seed.</li>
+	<li>Safe: Your seed or private keys are not sent to the server. Information received from the server is verified using <a href="https://en.bitcoin.it/wiki/Thin_Client_Security#Header-Only_Clients" target="_blank">SPV</a>.</li>
+	<li>No downtimes: Several public servers are available, you can switch instantly.</li>
+	<li>Ubiquitous: You can use the same wallet on different computers, it will auto-synchronize.</li>
+	<li>Cold Storage: You can have secure offline wallets and still safely spend from an online computer.</li>
+	<li>Open: You can export your private keys to other Viacoin clients.</li>
+	</ul>
+	
+	<h2 id="download">Download</h2>
+
+	<table>
+	<tbody><tr>
+		<td><img src="images/windows.png" alt="" class="icon"> Windows</td>
+		<td>
+		<a href="https://github.com/vialectrum/vialectrum/releases/download/1.9.8.3/vialectrum-1.9.8.3.exe">Standalone Executable</a>
+		<small>(<a href="https://github.com/vialectrum/vialectrum/releases/download/1.9.8.3/digest.txt">checksums</a>; <a href="https://github.com/vialectrum/vialectrum/releases/download/1.9.8.3/vialectrum-1.9.8.3.exe.asc">signed</a> by <a href="http://pgp.mit.edu:11371/pks/lookup?op=vindex&amp;search=0x601B072BDA0D2EC4">Vialectrum</a>)</small>
+		<br>
+		<a href="https://github.com/vialectrum/vialectrum/releases/download/1.9.8.3/vialectrum-1.9.8.3-setup.exe">Windows Installer</a>
+		<small>(<a href="https://github.com/vialectrum/vialectrum/releases/download/1.9.8.3/digest.txt">checksums</a>; <a href="https://github.com/vialectrum/vialectrum/releases/download/1.9.8.3/vialectrum-setup-1.9.8.3.exe.asc">signed</a> by <a href="http://pgp.mit.edu:11371/pks/lookup?op=vindex&amp;search=0x601B072BDA0D2EC4">Vialectrum</a>)</small>
+		</td>
+	</tr>
+	<tr>
+		<td><img src="images/mac.png" alt="" class="icon"> Mac</td>
+		<td>
+		<a href="https://github.com/vialectrum/vialectrum/releases/download/1.9.8.3/Vialectrum-1.9.8.3-macosx.dmg">Executable</a>
+		<small>(<a href="https://github.com/vialectrum/vialectrum/releases/download/1.9.8.3/digest.txt">checksums</a>; <a href="https://github.com/vialectrum/vialectrum/releases/download/1.9.8.3/Vialectrum-1.9.8.3-macosx.dmg.asc">signed</a> by <a href="http://pgp.mit.edu:11371/pks/lookup?op=vindex&amp;search=0x601B072BDA0D2EC4">Vialectrum</a>)</small>
+		</td>
+	</tr>
+	<tr>
+		<td><img src="images/linux.png" alt="" class="icon"> Linux</td>
+		<td>
+<pre>sudo apt-get install python-qt4 python-pip python-dev
+sudo pip install https://github.com/vialectrum/vialectrum/releases/download/1.9.8.3/Vialectrum-1.9.8.3.tar.gz
+vialectrum
+</pre>
+		</td>
+	</tr>
+	<!-- tr>
+		<td><img src="images/android_icon.png" alt="" class="icon"> Android</td>
+		<td><a href="android.html">Click for Android installation process</a>
+		</td>
+	 </tr -->
+
+	<tr>
+		<td><img src="images/sources.png" alt="" class="icon"> Sources</td>
+		<td>
+		<a href="https://github.com/vialectrum/vialectrum/releases/download/1.9.8.3/Vialectrum-1.9.8.3.tar.gz">Vialectrum-1.9.8.3.tar.gz</a>
+		<small>(<a href="https://github.com/vialectrum/vialectrum/releases/download/1.9.8.3/digest.txt">checksums</a>; <a href="https://github.com/vialectrum/vialectrum/releases/download/1.9.8.3/Vialectrum-1.9.8.3.tar.gz.asc">signed</a> by <a href="http://pgp.mit.edu:11371/pks/lookup?op=vindex&amp;search=0x601B072BDA0D2EC4">Vialectrum</a>)</small>
+		<br>
+		<a href="https://github.com/vialectrum/vialectrum/releases/download/1.9.8.3/Vialectrum-1.9.8.3.zip">Vialectrum-1.9.8.3.zip</a>
+		<small>(<a href="https://github.com/vialectrum/vialectrum/releases/download/1.9.8.3/digest.txt">checksums</a>; <a href="https://github.com/vialectrum/vialectrum/releases/download/1.9.8.3/Vialectrum-1.9.8.3.zip.asc">signed</a> by <a href="http://pgp.mit.edu:11371/pks/lookup?op=vindex&amp;search=0x601B072BDA0D2EC4">Vialectrum</a>)</small>
+		</td>
+	</tr>
+	</tbody></table>
+	
+	<h2 id="community">Community</h2>
+	<ul>
+	<li>IRC channel: <a href="irc://chat.freenode.net/vialectrum">#vialectrum</a> (<a href="http://webchat.freenode.net/?channels=vialectrum">web chat</a>) on Freenode</li>
+	<li>Development: <a href="https://github.com/vialectrum/vialectrum/">Project page on GitHub</a></li>
+	<li>Run your own server: <a href="https://github.com/vialectrum/vialectrum-server/blob/master/HOWTO.md">how-to</a></li>
+	<li>Donation fund: <a href="viacoin:VizK5nYsMDcmwGNeJ1abYMcnRVakpDt314">VizK5nYsMDcmwGNeJ1abYMcnRVakpDt314</a></li>
+	</ul>
+	
+	<h2 id="faq">FAQ</h2>
+	<dl>
+	<dt id="seed">What is the Seed?</dt>
+	<dd>Vialectrum uses a 128-bit random seed to generate your private keys.
+	The seed can be represented as a 12-word mnemonic code.
+	You do not need to perform regular backups, because your wallet can be
+	recovered from the seed that you can memorize or write on paper.
+
+	</dd><dt id="gap-limit">What is the gap limit?</dt>
+	<dd>The gap limit is the maximum number of consecutive unused addresses
+	in your deterministic sequence of addresses.
+	Vialectrum uses a gap limit to stop looking for addresses,
+	it is set to 5 by default, so the client get all addresses
+	until 5 unused addresses are found.</dd>
+
+	<dt id="freeze-address">What does it mean to "freeze" an address?</dt>
+	<dd>When you freeze an address, the funds in that address will not be
+	used for sending viacoins.
+	You cannot send viacoins if you don't have enough funds in non-frozen addresses.</dd>
+
+	<dt id="old-address">What to do with my old Viacoin addresses and wallet when switching to Vialectrum?</dt>
+	<dd>The best way to switch to Vialectrum is to send all the viacoins
+	you have on your old wallet to one of the addresses on your Vialectrum wallet.
+	This way you'll have all your viacoins secured with your seed.
+	You could import the private keys from your old client,
+	but in that case you would have to backup those keys separately,
+	as they won't become part of your Vialectrum seed.</dd>
+
+	<dt id="wallet-file">Where is my wallet file located?</dt>
+	<dd>A default wallet file called <kbd>default_wallet</kbd> is created
+	under the <kbd>/wallets</kbd> folder when you first run the application.
+	On Windows, this folder is located in
+	<kbd>\Users\YourUserName\AppData\Roaming\Local\Vialectrum</kbd>.
+	On all other operating systems, it is located in <kbd>~/.vialectrum</kbd>.</dd>
+	</dl>
+</div>
+</div>
+<div id="footer">
+	<p></p>
+</div>
+
+
+</body></html>

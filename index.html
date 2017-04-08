@@ -1,142 +1,192 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <script src="js/ga.js"></script>
-	<link rel="stylesheet" type="text/css" href="style/main.css">
-	<link rel="shortcut icon" href="http://vialectrum.org/favicon.ico">
-	<title>Vialectrum Viacoin Wallet</title>
+<title>Electrum Viacoin Wallet</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="css/main.css">
+<meta name="keyword" content="Viacoin, viacoin, via, VIA, bitcoin, litecoin, crypto, cryptocurrency, electrum, vialectrum, Viacoin electrum, VIA electrum"
 </head>
 <body>
-<div id="header">
-	<h1><img src="images/vialectrum.jpg" alt="Vialectrum"></h1>
+<div class="container">
+<div class="row clearfix">
+    <div class="col-md-12 column">
+        <div class="jumbotron">
+            <div class="text-center"> 
+                <img class="imgChanger" src="img/electrum_banner1.png" alt="vialectrum">
+            </div>           
+            <br>
+    
+            <hr>
+            <p>Vialectrum is a simple, but powerful Viacoin wallet. A 12-word security passphrase (or "seed") leaves intruders stranded and your peace of mind intact. Keep it on paper, or in your head...and never worry about losing your Viacoin to theft or hardware failure. No waiting, no lengthy blockchain downloads and no syncing to the network.</p>
+        </div>
+    </div>
 </div>
-<div id="content">
-<div id="column">
-	<p>Vialectrum is an easy-to-use <a href="http://viacoin.org/">Viacoin</a>
-	client based on <a href="https://electrum.org/">Electrum</a>.
-	It protects you from losing coins in a backup mistake or computer failure,
-	because your wallet can be recovered from a secret phrase
-	that you can write on paper or learn by heart.
-	There is no waiting time when you start the client,
-	because it does not download the Viacoin blockchain.</p>
-	
-	<h2 id="features">Features</h2>
-	<ul>
-	<li>Instant on: Your client does not download the blockchain, it uses a remote server.</li>
-	<li>Forgiving: Your wallet can be recovered from a secret seed.</li>
-	<li>Safe: Your seed or private keys are not sent to the server. Information received from the server is verified using 
-	<a href="https://en.bitcoin.it/wiki/Thin_Client_Security#Header-Only_Clients" target="_blank">SPV</a>.</li>
-	<li>No downtimes: Several public servers are available, you can switch instantly.</li>
-	<li>Ubiquitous: You can use the same wallet on different computers, it will auto-synchronize.</li>
-	<li>Cold Storage: You can have secure offline wallets and still safely spend from an online computer.</li>
-	<li>Open: You can export your private keys to other Viacoin clients.</li>
-	</ul>
-	
-	<h2 id="download">Download</h2>
-
-	<table>
-	<tbody><tr>
-		<td><img src="images/windows.png" alt="" class="icon"> Windows</td>
-		<td>
-		<a href="https://github.com/vialectrum/vialectrum/releases/download/v1.9.8.4/vialectrum-1.9.8.4.exe">Standalone Executable</a>
-		<small>(<a href="https://github.com/vialectrum/vialectrum/releases/download/v1.9.8.4/digest.txt">checksums</a>; 
-		<a href="https://github.com/vialectrum/vialectrum/releases/download/v1.9.8.4/vialectrum-1.9.8.4.exe.asc">signed</a> by 
-		<a href="http://pgp.mit.edu:11371/pks/lookup?op=vindex&amp;search=0x601B072BDA0D2EC4">Vialectrum</a>)</small>
-		<br>
-		<a href="https://github.com/vialectrum/vialectrum/releases/download/v1.9.8.4/vialectrum-1.9.8.4-setup.exe">Windows Installer</a>
-		
-		<small>(<a href="https://github.com/vialectrum/vialectrum/releases/download/v1.9.8.4/digest.txt">checksums</a>; 
-		<a href="https://github.com/vialectrum/vialectrum/releases/download/v1.9.8.4/vialectrum-1.9.8.4-setup.exe.asc">signed</a>
-		by <a href="http://pgp.mit.edu:11371/pks/lookup?op=vindex&amp;search=0x601B072BDA0D2EC4">Vialectrum</a>)</small>
-		</td>
-	</tr>
-	<tr>
-		<td><img src="images/mac.png" alt="" class="icon"> Mac</td>
-		<td>
-		<a href="https://github.com/vialectrum/vialectrum/releases/download/v1.9.8.4/Vialectrum-1.9.8.4-macosx.dmg">Executable</a>
-		<small>(<a href="https://github.com/vialectrum/vialectrum/releases/download/v1.9.8.4/digest.txt">checksums</a>; 
-		<a href="https://github.com/vialectrum/vialectrum/releases/download/v1.9.8.4/Vialectrum-1.9.8.4-macosx.dmg.asc">signed</a>
-		by <a href="http://pgp.mit.edu:11371/pks/lookup?op=vindex&amp;search=0x601B072BDA0D2EC4">Vialectrum</a>)</small>
-		</td>
-	</tr>
-	<tr>
-		<td><img src="images/linux.png" alt="" class="icon"> Linux</td>
-		<td>
-<pre>sudo apt-get install python-qt4 python-pip python-dev
-sudo pip install https://github.com/vialectrum/vialectrum/releases/download/v1.9.8.4/Vialectrum-1.9.8.4.tar.gz
-vialectrum
-</pre>
-		</td>
-	</tr>
-	<!-- tr>
-		<td><img src="images/android_icon.png" alt="" class="icon"> Android</td>
-		<td><a href="android.html">Click for Android installation process</a>
-		</td>
-	 </tr -->
-
-	<tr>
-		<td><img src="images/sources.png" alt="" class="icon"> Sources</td>
-		<td>
-		<a href="https://github.com/vialectrum/vialectrum/releases/download/v1.9.8.4/Vialectrum-1.9.8.4.tar.gz">Vialectrum-1.9.8.4.tar.gz</a>
-		<small>(<a href="https://github.com/vialectrum/vialectrum/releases/download/v1.9.8.4/digest.txt">checksums</a>; 
-		<a href="https://github.com/vialectrum/vialectrum/releases/download/v1.9.8.4/Vialectrum-1.9.8.4.tar.gz.asc">signed</a>
-		by <a href="http://pgp.mit.edu:11371/pks/lookup?op=vindex&amp;search=0x601B072BDA0D2EC4">Vialectrum</a>)</small>
-		<br>
-		<a href="https://github.com/vialectrum/vialectrum/releases/download/v1.9.8.4/Vialectrum-1.9.8.4.zip">Vialectrum-1.9.8.4.zip</a>
-		<small>(<a href="https://github.com/vialectrum/vialectrum/releases/download/v1.9.8.4/digest.txt">checksums</a>;
-		<a href="https://github.com/vialectrum/vialectrum/releases/download/v1.9.8.4/Vialectrum-1.9.8.4.zip.asc">signed</a>
-		by <a href="http://pgp.mit.edu:11371/pks/lookup?op=vindex&amp;search=0x601B072BDA0D2EC4">Vialectrum</a>)</small>
-		</td>
-	</tr>
-	</tbody></table>
-	
-	<h2 id="community">Community</h2>
-	<ul>
-	<li>Development: <a href="https://github.com/vialectrum/vialectrum/">Project page on GitHub</a></li>
-	<li>Run your own server: <a href="https://github.com/vialectrum/vialectrum-server/blob/master/HOWTO.md">how-to</a></li>
-	</ul>
-	
-	<h2 id="faq">FAQ</h2>
-	<dl>
-	<dt id="seed">What is the Seed?</dt>
-	<dd>Vialectrum uses a 128-bit random seed to generate your private keys.
-	The seed can be represented as a 12-word mnemonic code.
-	You do not need to perform regular backups, because your wallet can be
-	recovered from the seed that you can memorize or write on paper.
-
-	</dd><dt id="gap-limit">What is the gap limit?</dt>
-	<dd>The gap limit is the maximum number of consecutive unused addresses
-	in your deterministic sequence of addresses.
-	Vialectrum uses a gap limit to stop looking for addresses,
-	it is set to 5 by default, so the client get all addresses
-	until 5 unused addresses are found.</dd>
-
-	<dt id="freeze-address">What does it mean to "freeze" an address?</dt>
-	<dd>When you freeze an address, the funds in that address will not be
-	used for sending viacoins.
-	You cannot send viacoins if you don't have enough funds in non-frozen addresses.</dd>
-
-	<dt id="old-address">What to do with my old Viacoin addresses and wallet when switching to Vialectrum?</dt>
-	<dd>The best way to switch to Vialectrum is to send all the viacoins
-	you have on your old wallet to one of the addresses on your Vialectrum wallet.
-	This way you'll have all your viacoins secured with your seed.
-	You could import the private keys from your old client,
-	but in that case you would have to backup those keys separately,
-	as they won't become part of your Vialectrum seed.</dd>
-
-	<dt id="wallet-file">Where is my wallet file located?</dt>
-	<dd>A default wallet file called <kbd>default_wallet</kbd> is created
-	under the <kbd>/wallets</kbd> folder when you first run the application.
-	On Windows, this folder is located in
-	<kbd>\Users\YourUserName\AppData\Roaming\Local\Vialectrum</kbd>.
-	On all other operating systems, it is located in <kbd>~/.vialectrum</kbd>.</dd>
-	</dl>
+<h2 class="text-center" id="one">Downloads <i class="fa fa-download fa-2x" style="color:#B51F00;"""></i></h2>
+<div class="row">
+</div>
+<div class="row clearfix">
+    <div class="col-md-4 column"> 
+        <h2 class="text-center">Windows <span class="fa fa-2x fa-windows"></span></h2>
+        <p> <a href="https://github.com/vialectrum/vialectrum/releases">Standalone Executable</a><br>
+            <a href="https://github.com/vialectrum/vialectrum/releases">Windows Installer</a> <br>
+            <a href="https://github.com/vialectrum/vialectrum/releases">Portable version</a> </p>
+    </div>
+    <div class="col-md-4 column"> 
+        <h2 class="text-center">Linux <span class="fa fa-2x fa-linux"></span></h2>
+        <pre>sudo apt-get install python-qt4 python-pip python-dev
+sudo apt-get install python-slowaes  # on Ubuntu 13.10 and higher
+git clone git://github.com/pooler/vialectrum.git
+cd vialectrum
+python2 setup.py install
+sudo apt-get install pyqt4-dev-tools
+pyrcc4 icons.qrc -o gui/qt/icons_rc.py
+sudo apt-get install protobuf-compiler
+protoc --proto_path=lib/ --python_out=lib/ lib/paymentrequest.proto
+./vialectrum
+</pre> 
+    </div>        
+    <div class="col-md-4 column"> 
+        <h2 class="text-center">OS X <span class="fa fa-2x fa-apple"></span></h2>
+        <p class="text-center"> 
+        <a href="https://github.com/vialectrum/vialectrum/releases">Executable</a> </p>     
+    </div>
+</div>
+<div class="row clearfix">   
+    <div class="col-md-12 column">
+        <hr>
+    </div>
+    
+    <div class="col-md-12 column"> 
+    <div class="text-center">
+        <i class="fa fa-lg fa fa-github"></i> <b>Github</b> <a href="http://github.com/vialectrum/vialectrum">Vialectrum Github Repository</a></div> 
+    
+    </div>
+    <div class="col-md-12 column">
+        <hr>
+    </div>
+</div>
+    
+<div class="row clearfix"> 
+    <div class="jumbotron"> 
+        <div class="view text-center">
+        <div id="two"></div><h2><i class="fa fa-plug fa-2x" style="color:#B51F00;"></i> Features</h2>
+        </div>
+        <br />
+        
+        <ul class="fa-ul">
+            <li><i class="fa fa-check-square-o" style="color:#B51F00;"></i> <strong>Use instantly:</strong> Electrum doesn't download the blockchain or require your computer to sync with the network. Instead, it is maintained on a tamper-proof, remote server.</li>
+            <li><i class="fa fa-check-square-o" style="color:#B51F00;"></i> <strong>Safe:</strong> Your unique twelve word pass-phrase and private keys are never sent to the vialectrum servers. All information received from the server is verified using <a href="https://en.bitcoin.it/wiki/Thin_Client_Security#Header-Only_Clients" target="_blank">Simplified Payment Verification (SPV)</a>.</li>
+            <li><i class="fa fa-check-square-o" style="color:#B51F00;"></i> <strong>Forgiving:</strong> Never be concerned about losing your wallet! With your unique twelve-word seed, you can always recover and restore your wallet...even if you sustain the worst of hardware or software failures.</li>
+            <li><i class="fa fa-check-square-o" style="color:#B51F00;"></i> <strong>Cold storage:</strong> Use vialectrum to generate and manage your secure offline wallets, enabling you to take some or all of your funds completely offline.</li>
+            <li><i class="fa fa-check-square-o" style="color:#B51F00;"></i> <strong>Accessible:</strong> Export your private keys to other Viacoin clients, at your convenience.</li>
+        </ul>
+    </div>
+ </div>
+ <div class="row clearfix">    
+    <div class="col-md-12 column ui-sortable">
+        <div class="view">
+        <h2 contenteditable="true" class="text-center" style="color:#B51F00;""" id="three">Community <i class="fa fa-users fa-2x" style="color:#B51F00;"""></i></h2>
+        <!--</div>-->
+        <div class="view">
+            <br>
+            <table class="table">         
+                <tr class="">
+                    <td style="text-align:right;">Telegram Channel</td>
+                    <td><a href="https://telegram.me/viacoin">viacoin</a></td>
+                </tr>
+                <tr class="active">
+                    <td style="text-align:right;">Development</td>
+                    <td><a href="https://github.com/vialectrum/vialectrum/">Project page on GitHub</a></td>
+                </tr>
+                <tr class="">
+                    <td style="text-align:right;">Want to run your own server?</td>
+                    <td><a href="https://github.com/kyuupichan/electrumx/blob/master/docs/HOWTO.rst">How-To</a></td>
+                </tr>
+                <tr class="active">
+                    <td style="text-align:right;">Donation fund</td>
+                    <td><a href="viacoin:VftnVwpiUx2jb2vL1MBQYe8s17YYKqQZER">VftnVwpiUx2jb2vL1MBQYe8s17YYKqQZER</a></td>
+                </tr>
+                <tr class=""><td></td><td></td></tr>
+            </table>
+        </div>
+        </div>
+    </div>
+</div>
+<div class="row clearfix"> 
+    <div class="col-md-12 column">
+        <div class="jumbotron">
+        <div class="view">
+        <div id="four"></div>
+        <h2 class="text-center"> 
+        <i class="fa fa-question-circle fa-2x" style="color:#B51F00;"></i> Frequently Asked Questions
+        </h2>
+        </div>
+        <br>
+        <div class="view">
+            <dl>
+                <dt>What is the Seed?</dt>
+                <dd>vialectrum uses a 128-bit random seed to generate your private keys.
+                    The seed can be represented as a 12-word mnemonic code.
+                    You do not need to perform regular backups, because your wallet can be
+                    recovered from the seed that you can memorize or write on paper. 
+                    </dd>
+                <dt>What is the gap limit?</dt>
+                <dd>The gap limit is the maximum number of consecutive unused addresses
+                    in your deterministic sequence of addresses.
+                    vialectrum uses a gap limit to stop looking for addresses.
+                    This is set to 5 by default, so the client generates new addresses
+                    until 5 unused addresses are found.</dd>
+                <dt>What does it mean to "freeze" an address?</dt>
+                <dd>When you freeze an address, the funds in that address will not be
+                    used for sending Viacoins.
+                    You cannot send Viacoins if you don't have enough funds in non-frozen addresses.</dd>
+                <dt>What should I do with my old Viacoin addresses and wallet when switching to vialectrum?</dt>
+                <dd>The best way to switch to Electrum is to send all the Viacoins
+                    you have on your old wallet to one of the addresses on your Electrum wallet.
+                    This way you'll have all your Viacoins secured with your seed.
+                    You could import the private keys from your old client,
+                    but in that case you would have to backup those keys separately,
+                    as they won't become part of your Electrum seed.</dd>
+                <dt>Where is my wallet file located?</dt>
+                <dd>A default wallet file called <kbd>default_wallet</kbd> is created
+                    under the <kbd>/wallets</kbd> folder when you first run the application.
+                    On Windows, this folder is located in <kbd>\Users\YourUserName\AppData\Roaming\Local\vialectrum</kbd>.
+                    On all other operating systems, it is located in <kbd>~/.vialectrum</kbd>.</dd>
+                <dt>What is a blockchain?</dt>
+                <dd>A blockchain is long record of every single transaction ever made. Each Viacoin traded for a good or service is marked on the ledger with a transaction id and the origination and target wallet addresses.</dd>    
+            </dl>
+        </div>
+        </div>
+    </div>
+</div>
+<div class="row clearfix"> 
+    <div class="container">
+	    <div class="col-md-5 column">
+	    </div>
+	    <div class="col-md-4 column"></div>
+	    <div class="col-md-3 column">
+	    </div>
+    </div>
 </div>
 </div>
-<div id="footer">
-	<p></p>
-</div>
-
-
-</body></html>
+<script src="js/jquery.min.js" type="text/javascript"></script>
+<script>
+$(function() {
+  $('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
+}); 
+</script>
+</body>
+</html>

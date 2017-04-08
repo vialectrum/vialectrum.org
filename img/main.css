@@ -50,6 +50,12 @@ dt {
 	background-color: #f0f2f6;
 }
 
+.subtitle {
+	margin-top: -.5em;
+	text-align: center;
+	font-size: small;
+}
+
 #column {
 	margin: 0 auto;
 	max-width: 56em;

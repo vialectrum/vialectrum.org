@@ -34,16 +34,7 @@
     </div>
     <div class="col-md-4 column"> 
         <h2 class="text-center">Linux <span class="fa fa-2x fa-linux"></span></h2>
-        <pre>sudo apt-get install python-qt4 python-pip python-dev
-sudo apt-get install python-slowaes  # on Ubuntu 13.10 and higher
-git clone git://github.com/pooler/vialectrum.git
-cd vialectrum
-python2 setup.py install
-sudo apt-get install pyqt4-dev-tools
-pyrcc4 icons.qrc -o gui/qt/icons_rc.py
-sudo apt-get install protobuf-compiler
-protoc --proto_path=lib/ --python_out=lib/ lib/paymentrequest.proto
-./vialectrum
+        <p class="text-center"><a href="https://github.com/vialectrum/vialectrum">Compile from Source</a></p>
 </pre> 
     </div>        
     <div class="col-md-4 column"> 
@@ -80,6 +71,14 @@ protoc --proto_path=lib/ --python_out=lib/ lib/paymentrequest.proto
             <li><i class="fa fa-check-square-o" style="color:#B51F00;"></i> <strong>Forgiving:</strong> Never be concerned about losing your wallet! With your unique twelve-word seed, you can always recover and restore your wallet...even if you sustain the worst of hardware or software failures.</li>
             <li><i class="fa fa-check-square-o" style="color:#B51F00;"></i> <strong>Cold storage:</strong> Use vialectrum to generate and manage your secure offline wallets, enabling you to take some or all of your funds completely offline.</li>
             <li><i class="fa fa-check-square-o" style="color:#B51F00;"></i> <strong>Accessible:</strong> Export your private keys to other Viacoin clients, at your convenience.</li>
+            <li><i class="fa fa-check-square-o" style="color:#B51F00;"></i> <strong>Segwit:</strong> Experience an observable change in the average size of blocks, as a significant amount of transactional data is removed from the traditional block structure.</li>
+            <li><i class="fa fa-check-square-o" style="color:#B51F00;"></i> <strong>Add-ons:</strong> Vialectrum supports third-party plugins: Multisig services, Hardware wallets, etc.</li>
+            <li><i class="fa fa-check-square-o" style="color:#B51F00;"></i> <strong>Multisig:</strong> Split the permission to spend your coins between several wallets.</li>
+            <li><i class="fa fa-check-square-o" style="color:#B51F00;"></i> <strong>No Lock-In:</strong> You can export your private keys and use them in the Viacoin Core wallet.</li>
+            <li><i class="fa fa-check-square-o" style="color:#B51F00;"></i> <strong>Accessible:</strong> Export your private keys to other Viacoin clients, at your convenience.</li>
+            <li><i class="fa fa-check-square-o" style="color:#B51F00;"></i> <strong>Two factor authentication:</strong> Be safe from malware Use two-factor authentication. </li>
+
+
         </ul>
     </div>
  </div>
@@ -100,7 +99,7 @@ protoc --proto_path=lib/ --python_out=lib/ lib/paymentrequest.proto
                     <td><a href="https://github.com/vialectrum/vialectrum/">Project page on GitHub</a></td>
                 </tr>
                 <tr class="">
-                    <td style="text-align:right;">Want to run your own server?</td>
+                    <td style="text-align:right;">Run your own ElectrumX server for Viacoin?</td>
                     <td><a href="https://github.com/kyuupichan/electrumx/blob/master/docs/HOWTO.rst">How-To</a></td>
                 </tr>
                 <tr class="active">
